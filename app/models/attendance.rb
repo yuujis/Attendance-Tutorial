@@ -1,3 +1,3 @@
-class Attendance < ApplicationRecord
-  belongs_to :user
+class User < ApplicationRecord
+  has_many :attendances, dependent: :destroy
 end
